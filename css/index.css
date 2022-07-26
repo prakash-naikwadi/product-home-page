@@ -74,7 +74,7 @@ body {
   align-items: center;
 
   /* padding-top: 3.2rem; */
-  padding: 3.2rem 2.4rem 0 2.4rem;
+  padding: 3.2rem 0.8rem 0 0.8rem;
 }
 
 .logo-img {
@@ -115,7 +115,7 @@ body {
   display: grid;
   grid-template-columns: 3fr 2fr;
 
-  padding: 3.2rem 2.4rem 0 2.4rem;
+  padding: 3.2rem 0.8rem 0 0.8rem;
 }
 
 /* left section */
