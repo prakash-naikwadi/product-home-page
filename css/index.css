@@ -181,8 +181,10 @@ body {
 }
 
 .action-btns {
-  margin-top: 2.4rem;
+  display: flex;
   gap: 2.4rem;
+
+  margin-top: 2.4rem;
 }
 
 .action-btn {
