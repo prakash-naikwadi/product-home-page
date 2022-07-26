@@ -87,6 +87,11 @@ body {
   list-style: none;
 }
 
+.active-item {
+  color: orangered;
+  font-weight: 600;
+}
+
 .nav-list a {
   text-decoration: none;
   color: inherit;
@@ -194,6 +199,7 @@ body {
   cursor: pointer;
 
   font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
   padding: 1rem 1.8rem;
   border-radius: 100px;
 }
