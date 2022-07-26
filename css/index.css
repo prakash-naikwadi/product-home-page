@@ -1,0 +1,284 @@
+/* Design Systems
+
+Fonts:
+font-family: 'Fredoka One', cursive; => heading font
+font-family: 'Poppins', sans-serif;
+
+- FONT SIZES SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* ------------------- */
+/*     Global  Reset         */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* Reset Font Weights */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+/* set up the body */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* ------------------------- */
+/*  Navbar Section */
+/* ------------------------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* padding-top: 3.2rem; */
+  padding: 3.2rem 2.4rem 0 2.4rem;
+}
+
+.logo-img {
+  width: 12.4rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 6.4rem;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.8rem;
+}
+
+.nav-list li:last-child {
+  margin-right: 1.2rem;
+}
+
+.action-iocns {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.action-iocns img {
+  width: 2rem;
+}
+
+/* ------------------------- */
+/*  Intro Section */
+/* ------------------------- */
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  padding: 3.2rem 2.4rem 0 2.4rem;
+}
+
+/* left section */
+
+.left-section {
+  margin-top: 2.4rem;
+}
+
+.new-product-section {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.new-product-heading {
+  font-size: 3.2rem;
+}
+
+.circles-img {
+  width: 4.2rem;
+}
+
+.sub-headlines {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-top: 3.2rem;
+  margin-left: 6.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.into-heading {
+  font-family: "Fredoka One", cursive;
+  font-size: 5.6rem;
+}
+
+.sub-headline-div {
+  display: flex;
+  /* justify-content: center; */
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.sub-headline {
+  font-size: 2rem;
+  /* font-weight: 500; */
+}
+
+.plus-icon {
+  /* font-size: 1.2rem; */
+  background-color: orangered;
+  border-radius: 50%;
+  /* padding: 0.1%; */
+  /* background-size: 20px 30px; */
+}
+
+.text {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.268);
+
+  max-width: 75%;
+}
+
+.action-btns {
+  margin-top: 2.4rem;
+}
+
+.action-btn {
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 1.8rem;
+  border-radius: 100px;
+}
+
+/* right section */
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headphone-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.discount-content {
+  position: absolute;
+  z-index: 1000;
+  left: -5%;
+  top: 64%;
+
+  color: #fff;
+}
+
+.discount-content h4 {
+  font-family: "Fredoka One", cursive;
+  font-size: 1rem;
+  font-weight: 500;
+
+  position: relative;
+  left: 15%;
+}
+
+.discount-content h1 {
+  font-family: "Fredoka One", cursive;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.discount {
+  position: absolute;
+  z-index: 100;
+
+  width: 35%;
+
+  left: -14%;
+  top: 55%;
+
+  /* box-shadow: 5px 10px; */
+  filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.5));
+}
+
+.headphone-img {
+  width: 32.3rem;
+
+  /* position: relative; */
+  /* top: 0;
+  left: 0; */
+}
+
+.dots {
+  display: flex;
+  gap: 3.2rem;
+  margin-bottom: 4.6rem;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.yellow-dot {
+  background-color: yellow;
+}
+
+.tomato-dot {
+  background-color: orangered;
+}
+
+.black-dot {
+  background-color: #000;
+}
