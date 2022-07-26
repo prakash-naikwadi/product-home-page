@@ -182,6 +182,7 @@ body {
 
 .action-btns {
   margin-top: 2.4rem;
+  gap: 2.4rem;
 }
 
 .action-btn {
