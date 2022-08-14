@@ -291,3 +291,40 @@ body {
 .black-dot {
   background-color: #000;
 }
+
+/* ******************************* */
+/* Media Queries */
+/* ******************************* */
+
+@media screen and (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 47em) {
+  .intro-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .left-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 38em) {
+  .nav-list,
+  .action-iocns {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 38em) {
+  html {
+    font-size: 40%;
+  }
+}
